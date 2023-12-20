@@ -38,6 +38,10 @@ echo Deleting TPI (Tonline, video editing) files.
 del /s /f *.TPI
 
 echo.
+echo Deleting ZIP files.
+del /s /f *.ZIP
+
+echo.
 echo Files that should never be deleted:
 echo AVI
 echo ARW
