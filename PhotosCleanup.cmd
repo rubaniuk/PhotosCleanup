@@ -14,7 +14,7 @@ del /s /f *.TMP
 
 echo.
 echo Deleting DTHUMB and THM (thumbnail) files.
-del /s /f *.DTHUMB
+del /s /f *.dthumb
 del /s /f *.THM
 
 echo.
@@ -24,3 +24,44 @@ del /s /f *.LRV
 echo.
 echo Deleting LNK files.
 del /s /f *.LNK
+
+echo.
+echo Deleting NBU (Nokia Backup) files.
+del /s /f *.NBU
+
+echo.
+echo Deleting TXT files.
+del /s /f *.TXT
+
+echo.
+echo Deleting TPI (Tonline, video editing) files.
+del /s /f *.TPI
+
+echo.
+echo Files that should never be deleted:
+echo AVI
+echo ARW
+echo BMP
+echo CR2
+echo FLV
+echo GIF
+echo HEIC
+echo JPEG
+echo JPG
+echo MOV 
+echo MP3 
+echo MP4 
+echo MPG MPEG 
+echo MTS M2TS (associated with AVCHD)
+echo PNG
+echo WAV
+echo WMV
+echo WPL
+echo.
+
+
+:: echo.
+:: echo TODO: add deletion of .dthumb folders
+
+:: echo TODO: add deletion of *(?).??? files, i.e. image(2).jpg
+
