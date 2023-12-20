@@ -13,16 +13,13 @@ echo Deleting TMP (temporary) files.
 del /s /f *.TMP
 
 echo.
-echo Deleting THM (thumbnail) files.
+echo Deleting DTHUMB and THM (thumbnail) files.
+del /s /f *.DTHUMB
 del /s /f *.THM
 
 echo.
 echo Deleting LRV (lower-resolution video) files.
 del /s /f *.LRV
-
-echo.
-echo Deleting DTHUMB files.
-del /s /f *.DTHUMB
 
 echo.
 echo Deleting LNK files.
