@@ -13,9 +13,10 @@ echo Deleting TMP (temporary) files.
 del /s /f *.TMP
 
 echo.
-echo Deleting DTHUMB and THM (thumbnail) files.
+echo Deleting thumbnail files (DTHUMB, THM, thumbs.db).
 del /s /f *.dthumb
 del /s /f *.THM
+del /s /f thumbs.db
 
 echo.
 echo Deleting LRV (lower-resolution video) files.
@@ -65,7 +66,8 @@ echo.
 
 
 :: echo.
-:: echo TODO: add deletion of .dthumb folders
+:: echo TODO: add deletion of .dthumb folders (Android thumbnails)
+
 
 :: echo TODO: add deletion of *(?).??? files, i.e. image(2).jpg
 
