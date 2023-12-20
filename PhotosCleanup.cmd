@@ -1,25 +1,29 @@
 @echo off
 echo Running PhotosCleanup script.
 echo.
-echo Deleting AAE files.
-del /s *.AAE
+echo Deleting AAE (Apple Aperture Edits) files.
+del /s /f *.AAE
 
 echo.
 echo Deleting IMG_E*.jpg files (rotated copies of original photos, Apple iPhone).
-del /s IMG_E*.jpg
+del /s /f IMG_E*.jpg
 
 echo.
-echo Deleting TMP files.
-del /s *.TMP
+echo Deleting TMP (temporary) files.
+del /s /f *.TMP
 
 echo.
-echo Deleting THM files.
-del /s *.THM
+echo Deleting THM (thumbnail) files.
+del /s /f *.THM
+
+echo.
+echo Deleting LRV (lower-resolution video) files.
+del /s /f *.LRV
 
 echo.
 echo Deleting DTHUMB files.
-del /s *.DTHUMB
+del /s /f *.DTHUMB
 
 echo.
 echo Deleting LNK files.
-del /s *.LNK
+del /s /f *.LNK
