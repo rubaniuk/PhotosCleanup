@@ -64,6 +64,9 @@ echo WMV
 echo WPL
 echo.
 
+echo.
+echo SyncToy files (sorted by time, oldest first):
+dir /ah /b /on SyncToy_*.dat
 
 :: echo.
 :: echo TODO: add deletion of .dthumb folders (Android thumbnails)
