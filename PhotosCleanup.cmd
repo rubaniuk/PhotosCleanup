@@ -68,6 +68,10 @@ echo.
 echo SyncToy files (sorted by time, oldest first):
 dir /ah /b /on SyncToy_*.dat
 
+echo.
+echo The following are iPhone rotated images/videos (IMG_E*):
+dir /s /b IMG_E*.*
+
 :: echo.
 :: echo TODO: add deletion of .dthumb folders (Android thumbnails)
 
