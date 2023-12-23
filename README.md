@@ -1,2 +1,2 @@
 # PhotosCleanup
-Windows CMD script to cleanup photo folders
+Basic CMD script for Windows to cleanup photo/video folders.
