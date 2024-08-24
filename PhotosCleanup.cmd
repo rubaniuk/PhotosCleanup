@@ -82,9 +82,6 @@ echo.
 echo PhotosCleanup is done! Have a good one!
 echo.
 
-:: echo.
-:: echo TODO: add deletion of .dthumb folders (Android thumbnails)
-
 
 :: echo TODO: add deletion of *(?).??? files, i.e. image(2).jpg
 
