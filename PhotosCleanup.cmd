@@ -1,12 +1,31 @@
 @echo off
 echo Running PhotosCleanup script.
+
+echo.
+echo Files that should never be deleted:
+echo AVI
+echo ARW
+echo BMP
+echo CR2
+echo FLV
+echo GIF
+echo HEIC
+echo JPEG
+echo JPG
+echo MOV 
+echo MP3 
+echo MP4 
+echo MPG MPEG 
+echo MTS M2TS (associated with AVCHD)
+echo PNG
+echo WAV
+echo WMV
+echo WPL
+echo.
+
 echo.
 echo Deleting AAE (Apple Aperture Edits) files.
 del /s /f *.AAE
-
-echo.
-echo Deleting IMG_E*.jpg files (rotated copies of original photos, Apple iPhone).
-del /s /f IMG_E*.jpg
 
 echo.
 echo Deleting TMP (temporary) files.
@@ -43,34 +62,25 @@ echo Deleting ZIP files.
 del /s /f *.ZIP
 
 echo.
-echo Files that should never be deleted:
-echo AVI
-echo ARW
-echo BMP
-echo CR2
-echo FLV
-echo GIF
-echo HEIC
-echo JPEG
-echo JPG
-echo MOV 
-echo MP3 
-echo MP4 
-echo MPG MPEG 
-echo MTS M2TS (associated with AVCHD)
-echo PNG
-echo WAV
-echo WMV
-echo WPL
+echo Deleting IMG_E*.jpg files (rotated copies of original photos, Apple iPhone).
+del /s /f IMG_E*.jpg
+
 echo.
+echo Deleting IMG_E*.HEIC files (rotated copies of original photos, Apple iPhone).
+del /s /f IMG_E*.HEIC
+
+
+echo.
+echo The following are iPhone rotated images/videos (IMG_E*):
+dir /s /b IMG_E*.*
 
 echo.
 echo SyncToy files (sorted by time, oldest first):
 dir /ah /b /on SyncToy_*.dat
 
 echo.
-echo The following are iPhone rotated images/videos (IMG_E*):
-dir /s /b IMG_E*.*
+echo PhotosCleanup is done! Have a good one!
+echo.
 
 :: echo.
 :: echo TODO: add deletion of .dthumb folders (Android thumbnails)
