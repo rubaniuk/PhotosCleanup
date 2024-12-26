@@ -62,12 +62,20 @@ echo Deleting ZIP files.
 del /s /f *.ZIP
 
 echo.
+echo Deleting Low-Resolution Video (LRV) files, primarily used by GoPro cameras:
+del /s /f *.LRV
+
+echo.
 echo Deleting IMG_E*.jpg files (rotated copies of original photos, Apple iPhone).
 del /s /f IMG_E*.jpg
 
 echo.
 echo Deleting IMG_E*.HEIC files (rotated copies of original photos, Apple iPhone).
 del /s /f IMG_E*.HEIC
+
+echo.
+echo Deleting IMG_E*.MOV files (rotated copies of original videos, Apple iPhone).
+del /s /f IMG_E*.mov
 
 
 echo.
