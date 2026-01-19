@@ -88,6 +88,10 @@ echo SyncToy files (sorted by time, oldest first):
 dir /ah /b /on SyncToy_*.dat
 
 echo.
+echo Android/WhatsApp thumbnail files (100000*.jpg):
+dir /s /b 100000????.jpg
+
+echo.
 echo PhotosCleanup is done! Have a good one!
 echo.
 
