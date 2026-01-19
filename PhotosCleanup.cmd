@@ -30,6 +30,7 @@ del /s /f *.AAE
 echo.
 echo Deleting TMP (temporary) files.
 del /s /f *.TMP
+del /s /f .trashed-*.*
 
 echo.
 echo Deleting thumbnail files (DTHUMB, THM, thumbs.db).
